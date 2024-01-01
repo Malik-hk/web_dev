@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet " href= "{% static Malik2App/styles.css%}">
+    </head>
+    <body>
+        <div class=conditional_statement>
+
+            {% if newyear %}
+                <h1>YES</h1>
+            {% else %}
+                <h1>NO</h1>
+            {% endif %}
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-color:red;
+}
+
+.conditional_statement{
+    text-align:center;
+    padding: 400px 0;
+    color: yellow;
+    font-size: large;
+}
+

@@ -1,0 +1,13 @@
+{% extends  "Malik2App/layout.html " %}
+{% block body %}
+
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href= "{% url addtask %} ">Add task</a>
+
+{% endblock body %}
+
