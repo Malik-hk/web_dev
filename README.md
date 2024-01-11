@@ -1,4 +1,4 @@
-The code in each directory stands alone, not relying on others. 
+The code in each directory stands alone, not relying on other directories. 
 
 I'm building and gathering diverse web pages and websites within this single repository. I'm tackling these projects on my own to boost my web development skills and explore web penetration testing. 
 
