@@ -3,7 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #B4DAB3;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -126,13 +130,13 @@ span.psw {
 </head>
 <body>
 
-<h2>Malik Login Form</h2>
+  {% comment %} <h2>Malik Login Form</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 <div id="id01" class="modal">
-  <form class="modal-content animate" action="/action_page.php" method="post">
-
+  <form class="modal-content animate" action="" method="post">
+    {% csrf_token %}
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
@@ -147,9 +151,39 @@ span.psw {
     </div>
 
   </form>
-</div>
+</div> {% endcomment %}
 
-<script>
+
+
+
+<form action="" style="border:1px solid #ccc" method='post'>
+  {% csrf_token %}
+  <div class="container">
+    <h2>Malik Login Form</h2>
+
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Login</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+{% comment %} <script>
 // Get the modal
 var modal = document.getElementById('id01');
 // When the user clicks anywhere outside of the modal, close it
@@ -161,4 +195,4 @@ window.onclick = function(event) {
 
 </script>
 </body>
-</html>
+</html> {% endcomment %}
